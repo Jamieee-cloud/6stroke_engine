@@ -1,6 +1,8 @@
 # 6-Stroke Internal Combustion Engine Simulation
 
-<img src="animation/porsche_6stroke_engine.gif" width="600" alt="6-Stroke Engine Animation">
+<div align="center">
+  <img src="animation/porsche_6stroke_engine.gif" width="600" alt="6-Stroke Engine Animation">
+</div>
 
 A MATLAB implementation for steady-state simulation of a novel 6-stroke internal combustion engine architecture. This codebase provides a complete simulation framework, from geometric analysis to thermodynamic modeling and dynamic visualization.
 

